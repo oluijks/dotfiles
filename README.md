@@ -1,3 +1,3 @@
-# Dotfiles
+# Dotfiles for Hyprland
 
-Based upon [hyprland-starter](https://github.com/mylinuxforwork/hyprland-starter)
+Based upon [ML4W Dotfiles for Hyprland](https://github.com/mylinuxforwork/dotfiles)
