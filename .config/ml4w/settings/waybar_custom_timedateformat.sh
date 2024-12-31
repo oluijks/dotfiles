@@ -1,1 +1,1 @@
-%a %Od-%Om-%Y %H:%M
+%A %Od %B %Y - %H:%M
