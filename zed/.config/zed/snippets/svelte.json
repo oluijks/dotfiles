@@ -1,0 +1,14 @@
+{
+  "SvelteKit Page": {
+    "prefix": "skp",
+    "body": [
+      "<script lang=\"ts\"></script>",
+      "",
+      "<div>$1</div>",
+      "",
+      "<style></style>",
+      "$0"
+    ],
+    "description": "SvelteKit Page"
+  }
+}
