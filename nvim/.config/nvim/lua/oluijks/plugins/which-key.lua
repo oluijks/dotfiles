@@ -1,6 +1,6 @@
 return {
 	"folke/which-key.nvim",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+	dependencies = { "nvim-tree/nvim-web-devicons" },
 	event = "VeryLazy",
 	init = function()
 		vim.o.timeout = true
@@ -9,6 +9,6 @@ return {
 
 	opts = {
 		preset = "classic",
-		expand = 3,
+		-- expand = 3,
 	},
 }

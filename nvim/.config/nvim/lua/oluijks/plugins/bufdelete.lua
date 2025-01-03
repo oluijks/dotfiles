@@ -1,3 +1,5 @@
+-- delete a buffer without messing up window layout
+
 return {
 	"famiu/bufdelete.nvim",
 	keys = {
@@ -10,6 +12,7 @@ return {
 					vim.cmd("quit")
 				end
 			end,
+			desc = "Delete buffer/Quit NeoVim",
 		},
 	},
 }
