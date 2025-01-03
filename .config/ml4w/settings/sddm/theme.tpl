@@ -1,8 +1,8 @@
 [General]
 
 # Set to your screen resolution for better results
-width=1680
-height=1050
+width=3440
+height=1440
 
 backgroundColour="black"
 
@@ -47,7 +47,7 @@ accentColour="#a7d9ea"
 skipToLogin=false
 
 # Supports Markdown formatting, leave empty to not display any text
-greeting="Welcome back!"
+greeting="Welcome Olaf"
 
 # Adjusts the font size for the greeting message, clock and date
 fontSizeMultiplier=2

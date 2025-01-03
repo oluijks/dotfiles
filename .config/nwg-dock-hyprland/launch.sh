@@ -5,5 +5,5 @@
 #                      
 
 if [ -f $HOME/.config/ml4w/settings/nwg-dock-hyprland.sh ] ;then
-    nwg-dock-hyprland -d -i 32 -w 5 -mb 0 -ml 10 -mr 10 -x -c "rofi -show drun"
+    nwg-dock-hyprland -r -i 32 -w 5 -mb 10 -ml 10 -mr 10 -x -c "rofi -show drun"
 fi
