@@ -20,12 +20,12 @@ return {
 		-- Set menu
 		dashboard.section.buttons.val = {
 			dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
-			dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
-			dashboard.button("SPC ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
-			dashboard.button("SPC fs", "  > Find Word", "<cmd>Telescope live_grep<CR>"),
-			dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
+			dashboard.button("SPACE ee", "  > File Explorer", "<cmd>NvimTreeToggle<CR>"),
+			dashboard.button("SPACE ff", "󰱼  > Find a file", "<cmd>Telescope find_files<CR>"),
+			dashboard.button("SPACE fs", "  > Find a word", "<cmd>Telescope live_grep<CR>"),
+			-- dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", "<cmd>SessionRestore<CR>"),
 			dashboard.button("s", "  > Settings", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
-			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
+			dashboard.button("q", "  > Quit NeoVim", "<cmd>qa<CR>"),
 		}
 
 		-- do not show bufferline when alpha open
