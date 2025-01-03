@@ -92,7 +92,7 @@ return {
 				},
 			},
 			filters = {
-				custom = { ".DS_Store", "git", "node_modules" },
+				custom = { ".DS_Store", "node_modules" },
 				git_ignored = false,
 			},
 			diagnostics = {
