@@ -1,0 +1,55 @@
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# nvim end
+
+# pnpm
+export PNPM_HOME="/home/oluijks/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bun completions
+[ -s "/home/oluijks/.bun/_bun" ] && source "/home/oluijks/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# bun end
+
+# turso
+export PATH="$PATH:/home/oluijks/.turso"
+
+# fly.io
+export FLYCTL_INSTALL="/home/oluijks/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+# tmuxifier
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+
+# aliases
+alias dev='function dev() { tmuxifier load-session $1 }; dev'
+alias zed="/usr/bin/zeditor"
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+alias bpp="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
+
+alias cpw='function cpw() { oathtool -d 6 -b --totp $(pass show $1) | kitten clipboard; }; cpw'
+alias otp='function otp() { oathtool -d 6 -b --totp $(pass show otp/$1) | kitten clipboard; }; otp'
+
+# tmuxifier
+eval "$(tmuxifier init -)"
+
+# fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# zoxide
+eval "$(zoxide init zsh --cmd cd)"
+
+# starship prompt
+eval "$(starship init zsh)"
+
+. "$HOME/.cargo/env"
+. "$HOME/.local/bin/env"
