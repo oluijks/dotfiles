@@ -13,7 +13,7 @@ o.foldenable = true
 -- codefolding end
 
 -- to make current_line_blame visible
-vim.cmd [[hi NonText guifg=#9397a0]]
+vim.cmd [[hi NonText guifg=#f0f1f2]]
 
 local autocmd = vim.api.nvim_create_autocmd
 
@@ -42,4 +42,3 @@ autocmd("BufReadPost", {
     end
   end,
 })
-
