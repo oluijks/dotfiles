@@ -91,7 +91,7 @@
 
   // Updates Count
   "custom/updates": {
-    "format": "  ({})",
+    "format": "  {}",
     "escape": true,
     "return-type": "json",
     "exec": "~/.config/ml4w/scripts/updates.sh",
@@ -170,7 +170,8 @@
 
   // Power Menu
   "custom/exit": {
-    "format": "",
+    // "format": "",
+    "format": " EXIT",
     "on-click": "~/.config/ml4w/scripts/wlogout.sh",
     "on-click-right": "hyprlock",
     "tooltip-format": "Left: Power menu\nRight: Lock screen"

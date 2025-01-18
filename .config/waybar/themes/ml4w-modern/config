@@ -39,17 +39,17 @@
 
   // Modules Right
   "modules-right": [
+    "group/hardware",
+    "group/tools",
+    "tray",
     "custom/updates",
     "pulseaudio",
     "backlight",
     "bluetooth",
     "battery",
     // "network",
-    "group/hardware",
-    "group/tools",
-    "tray",
-    "custom/exit",
     "clock",
-    "custom/ml4w-welcome"
+    "custom/ml4w-welcome",
+    "custom/exit"
   ]
 }
