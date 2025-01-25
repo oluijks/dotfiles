@@ -68,7 +68,7 @@
 
   // Kernel
   "custom/kernel": {
-    "format": "/kernel: {}",
+    "format": "{}",
     "interval": "3600",
     // "max-length": "20",
     "exec": "uname -r"
