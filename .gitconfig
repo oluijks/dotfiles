@@ -1,0 +1,7 @@
+[user]
+	name = Olaf Luijks
+	email = olafluijks@proton.me
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
