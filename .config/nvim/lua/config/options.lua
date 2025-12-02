@@ -40,3 +40,5 @@ set.incsearch = true
 set.updatetime = 50
 
 set.winborder = "rounded"
+
+vim.o.laststatus = 3
