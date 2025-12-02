@@ -2,25 +2,26 @@
 local M = {}
 
 function M.setup()
-	local Snacks = require("snacks")
+    local Snacks = require("snacks")
 
-	Snacks.setup({
-		explorer = { enabled = true },
-		picker = {
-			enabled = true,
-			sources = {
-				explorer = {
-					layout = {
-						auto_hide = { "input" },
-					},
-				},
-			},
-		},
-	})
+    Snacks.setup({
+        explorer = { enabled = true },
+        picker = {
+            enabled = true,
+            sources = {
+                explorer = {
+                    layout = {
+                        auto_hide = { "input" },
+                    },
+                },
+            },
+        },
+        lazygit = {},
+    })
 
-	vim.keymap.set("n", "<leader>e", function()
-		Snacks.explorer()
-	end, { desc = "Snacks Explorer" })
+    vim.keymap.set("n", "<leader>e", function()
+        Snacks.explorer()
+    end, { desc = "Snacks Explorer" })
 end
 
 return M
