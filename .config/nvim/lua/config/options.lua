@@ -1,65 +1,42 @@
---[[
-Neovim Options Configuration
---]]
+local set = vim.opt
 
-local o = vim.o
-local opt = vim.opt
-local g = vim.g
+set.number = true
+set.relativenumber = true
 
--- UI and Display Settings
-o.cmdheight = 0
-o.laststatus = 3
-opt.scrolloff = 9999 -- Keep cursor centered
-opt.sidescrolloff = 8
-opt.cursorline = true
-opt.number = true
-opt.relativenumber = true
+set.tabstop = 4
+set.shiftwidth = 4
+set.autoindent = true
+set.expandtab = true
 
--- File Handling and Backup Settings
-opt.backup = false
-opt.writebackup = false
-opt.swapfile = false
-opt.undofile = true
-opt.undolevels = 10000
-opt.encoding = "utf-8"
-opt.fileencoding = "utf-8"
+set.smartcase = true
+set.ignorecase = true
 
--- Search and Replace Settings
-opt.ignorecase = true
-opt.smartcase = true -- Override ignorecase if search contains uppercase
-opt.hlsearch = true
-opt.incsearch = true
+set.termguicolors = true
+set.background = "dark"
+set.signcolumn = "yes"
 
--- Indentation and Formatting
-opt.tabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
-opt.smartindent = true
-opt.wrap = false
+set.cursorline = true
 
--- Performance and Behavior
-opt.updatetime = 250 -- Faster completion
-opt.timeoutlen = 300
-opt.clipboard = "unnamedplus"
-opt.mouse = "a"
+set.colorcolumn = "80"
 
--- Completion settings for CopilotChat
-opt.completeopt = { "menu", "menuone", "noselect", "popup" } -- For best CopilotChat experience
+set.clipboard:append("unnamedplus")
 
-vim.opt.guicursor = table.concat({
-  "n-v-c:block", -- normal/visual: block
-  "i-ci:ver25", -- insert: vertical bar
-  "r-cr:hor20", -- replace: horizontal underline
-  "o:hor50",
-}, ",")
+set.backspace = "indent,eol,start"
 
--- Terminal undercurl support
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
+set.splitbelow = true
+set.splitright = true
 
--- LazyVim Global Configuration
-g.lazyvim_picker = "fzf"
-g.lazyvim_cmp = "blink.cmp" -- Enable blink.cmp (will be disabled for copilot-chat specifically)
-g.lazyvim_eslint_auto_format = true
-g.lazyvim_prettier_needs_config = true
-g.lazyvim_rust_diagnostics = "rust-analyzer"
+set.iskeyword:append("-")
+
+set.scrolloff = 8
+
+set.swapfile = false
+set.backup = false
+set.undodir = os.getenv("HOME") .. "/.vim/undodir"
+set.undofile = true
+
+set.incsearch = true
+
+set.updatetime = 50
+
+set.winborder = "rounded"

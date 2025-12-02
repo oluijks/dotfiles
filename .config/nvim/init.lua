@@ -1,5 +1,17 @@
---[[
-Neovim Main Configuration Entry Point
---]]
+-- init.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
 
-require("config.lazy")
+require("config.globals")
+require("config.options")
+require("config.autocmd")
+require("config.keymaps")
+require("config.lsp")
+
+require("plugins.snacks").setup()
+require("plugins.conform").setup()
+require("plugins.lualine").setup()
+require("plugins.gitsigns").setup()
+require("plugins.telescope").setup()
+require("plugins.treesitter").setup()
+require("plugins.colorscheme").setup()
+require("plugins.highlight-colors").setup()

@@ -1,1 +1,0 @@
-# NeoVim Configuration

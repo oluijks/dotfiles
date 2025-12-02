@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/oluijks/.zsh/completions:"* ]]; then export FPATH="/home/oluijks/.zsh/completions:$FPATH"; fi
 # ~/.zshrc
 
 [[ -o interactive ]] || return
@@ -118,3 +120,18 @@ if command -v fastfetch >/dev/null 2>&1 && \
 fi
 
 # vim: ts=2 sw=2 sts=2 et
+
+
+
+# bun completions
+[ -s "/home/oluijks/.bun/_bun" ] && source "/home/oluijks/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+. "/home/oluijks/.deno/env"
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/oluijks/.dart-cli-completion/zsh-config.zsh ]] && . /home/oluijks/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

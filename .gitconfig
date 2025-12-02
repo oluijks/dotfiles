@@ -1,7 +1,12 @@
 [user]
 	name = Olaf Luijks
-	email = olafluijks@proton.me
+  email = olafluijks@proton.me
+  signingkey = olafluijks@proton.me
 [init]
 	defaultBranch = main
 [pull]
 	rebase = true
+[commit]
+  gpgsign = true
+[tag]
+  gpgSign = true
