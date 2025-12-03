@@ -1,3 +1,6 @@
+-- lsp/cssls.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 return {
     cmd = { "vscode-css-language-server", "--stdio" },
     filetypes = { "css", "scss", "less" },

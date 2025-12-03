@@ -1,3 +1,6 @@
+-- lsp/ts_ls.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 return {
     cmd = { "typescript-language-server", "--stdio" },
     filetypes = {
