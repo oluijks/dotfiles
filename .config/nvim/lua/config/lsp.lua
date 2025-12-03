@@ -1,3 +1,6 @@
+-- lua/config/lsp.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("cssls")
 vim.lsp.enable("json_ls")

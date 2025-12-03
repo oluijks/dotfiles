@@ -1,3 +1,6 @@
+-- lua/config/options.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 local set = vim.opt
 
 set.number = true

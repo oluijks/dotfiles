@@ -1,3 +1,6 @@
+-- lua/plugins/lualine.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 local M = {}
 
 function M.setup()

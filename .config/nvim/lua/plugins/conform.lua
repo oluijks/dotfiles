@@ -1,3 +1,6 @@
+-- lua/plugins/conform.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 local M = {}
 
 function M.setup()

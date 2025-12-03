@@ -1,11 +1,13 @@
+-- lua/plugins/telescope.lua
+-- author: Olaf Luijks <olafluijks@proton.me>
+
 local M = {}
 
 function M.setup()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
 
-
-    require("telescope").setup({
+    telescope.setup({
         defaults = {
             mappings = {
                 i = {
