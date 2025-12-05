@@ -4,6 +4,10 @@
 
 All plugins are installed as native `pack/*/start/*` packages (no plugin manager).
 
+### Install and update plugins
+
+Run `scripts/install-plugins.sh` to install and `scripts/update-plugins.sh` to update your plugins.
+
 ### Formatting
 
 - **[stevearc/conform.nvim](https://github.com/stevearc/conform.nvim)**  

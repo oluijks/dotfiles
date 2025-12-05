@@ -18,9 +18,14 @@ function M.setup()
 				},
 			},
 		},
+		indent = {
+			enabled = true,
+			only_current = true,
+		},
 		lazygit = {
 			enabled = true,
 		},
+		notifier = {},
 		styles = {
 			lazygit = {
 				border = "rounded",
