@@ -73,17 +73,15 @@ au({ "CursorHold", "InsertLeave" }, {
     end,
 })
 
--- Disable diagnostics while typing, re-enable when leaving insert
--- (I personally prefer buffer-local here instead of global)
 au("InsertEnter", {
     callback = function(args)
-        vim.diagnostic.enable(false, args.buf)
+        vim.diagnostic.enable(false, { bufnr = args.buf })
     end,
 })
 
 au("InsertLeave", {
     callback = function(args)
-        vim.diagnostic.enable(true, args.buf)
+        vim.diagnostic.enable(true, { bufnr = args.buf })
     end,
 })
 
