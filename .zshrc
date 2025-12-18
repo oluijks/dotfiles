@@ -135,3 +135,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [[ -f /home/oluijks/.dart-cli-completion/zsh-config.zsh ]] && . /home/oluijks/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+
+. "$HOME/.turso/env"
+export GPG_TTY=$(tty)

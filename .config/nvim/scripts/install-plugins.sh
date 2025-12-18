@@ -139,4 +139,13 @@ clone_if_missing \
   "https://github.com/christoomey/vim-tmux-navigator.git" \
   "$NVIM_DATA/site/pack/tmux-navigator/start/vim-tmux-navigator"
 
+# ------------------------------------------------------------------------------
+# Vimwiki integration
+# ------------------------------------------------------------------------------
+
+clone_if_missing \
+  "vimwiki" \
+  "https://github.com/vimwiki/vimwiki.git" \
+  "$NVIM_DATA/site/pack/vimwiki/start/vimwiki"
+
 echo "Done. Native plugins installed/checked under $NVIM_DATA/site/pack"
